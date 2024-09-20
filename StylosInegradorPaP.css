@@ -51,7 +51,7 @@ body :visited{
 }
 
 main {
-    ; /* Fondo negro para el main */
+     /* Fondo negro para el main */
     color: white; /* Texto blanco para el main */
     padding: 20px; /* Espacio interno en el main para que el texto no esté pegado a los bordes */
     min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
