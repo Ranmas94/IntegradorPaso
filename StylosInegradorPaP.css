@@ -43,3 +43,17 @@ main {
     padding: 20px; /* Espacio interno en el main para que el texto no esté pegado a los bordes */
     min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
 }
+
+.columna {
+    display: flex; /* Utiliza Flexbox */
+    flex-direction: row; /* Alinea elementos en fila */
+    justify-content: space-between; /* Espacio entre columnas */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan si es necesario */
+}
+
+.columna > div {
+    flex: 1; /* Cada columna toma el mismo espacio */
+    margin: 10px; /* Espacio entre columnas */
+    min-width: 300px; /* Asegura que las columnas no sean demasiado estrechas */
+    box-sizing: border-box; /* Incluye el padding y el margen en el ancho total */
+}
