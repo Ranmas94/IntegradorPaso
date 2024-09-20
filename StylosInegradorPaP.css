@@ -7,11 +7,20 @@ header{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-align: left;
     color: white;
-
-    padding: 10px;
+    padding: 15px;
 }
 header :visited{
     color: white; /*cambiar el color del link visitado */
+}
+
+header nav{
+    display: flex; /* Flexbox para el menú */
+    justify-content: left; /* Tira a la izquierda los elementos del menú */
+    gap: 30px; /* Espacio entre enlaces */
+}
+
+header nav a{
+    text-decoration: none;
 }
 
 footer{
@@ -20,8 +29,8 @@ footer{
     left: 0;/*Fija el menu a la izquiera de todo*/
     width: 100%; /* Hace que el pie ocupe todo el ancho de la página */
     background: #333;
-    color: white;
     text-align: center;
+    color: white;
     padding: 10px;
     
 }
@@ -31,6 +40,10 @@ body{
     padding-bottom: 20px;/* Espacio inferior desde donde inicio el contenido para no taparlo por el footer*/
     margin: 0; /* Se agrega 0 para elimnar el margen que trae por defecto*/
 
+    background-image: url(fondoanimado.gif); /* Agrega la imagen de fondo */
+    background-size: cover; /* Cubre toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 body :visited{
@@ -38,7 +51,7 @@ body :visited{
 }
 
 main {
-    background-color: black; /* Fondo negro para el main */
+    ; /* Fondo negro para el main */
     color: white; /* Texto blanco para el main */
     padding: 20px; /* Espacio interno en el main para que el texto no esté pegado a los bordes */
     min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
