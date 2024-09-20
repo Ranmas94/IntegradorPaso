@@ -57,3 +57,8 @@ main {
     min-width: 300px; /* Asegura que las columnas no sean demasiado estrechas */
     box-sizing: border-box; /* Incluye el padding y el margen en el ancho total */
 }
+
+h1, h2, h3 {
+    font-size: 24px; /* Cambia este valor al tamaño deseado */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
