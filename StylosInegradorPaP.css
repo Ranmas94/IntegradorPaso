@@ -1,0 +1,44 @@
+header{
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0; /* Fija el menu arriba de todo*/
+    left: 0; /*Fija el menu a la izquiera de todo*/
+    width: 100%; /* Hace que el menú ocupe todo el ancho de la página */
+    background-color: #970505;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: left;
+    color: white;
+
+    padding: 10px;
+}
+header :visited{
+    color: white; /*cambiar el color del link visitado */
+}
+
+footer{
+    position: fixed;
+    bottom: 0; /* Fija en la parte inferior (si es necesario) */
+    left: 0;/*Fija el menu a la izquiera de todo*/
+    width: 100%; /* Hace que el pie ocupe todo el ancho de la página */
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+body{
+    padding-top: 20px; /* Espacio superior desde donde inicio el contenido para no taparlo por el header */
+    padding-bottom: 20px;/* Espacio inferior desde donde inicio el contenido para no taparlo por el footer*/
+    margin: 0; /* Se agrega 0 para elimnar el margen que trae por defecto*/
+}
+
+body :visited{
+    color: white; /*cambiar el color del link visitado en body*/
+}
+
+main {
+    background-color: black; /* Fondo negro para el main */
+    color: white; /* Texto blanco para el main */
+    padding: 20px; /* Espacio interno en el main para que el texto no esté pegado a los bordes */
+
+}

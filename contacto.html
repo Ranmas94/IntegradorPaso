@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="StylosInegradorPaP.css">
+</head>
+<body>
+    <header> <!--En el header voy a tener la cabecera de las paginas y estara fijada a top y left, abarcando el ancho de la pagina-->
+        <nav> <!--Nav sera para mis botones de navegacion entre las paginas del documento, fijado a la cabecera tambien-->
+            <a href="principal.html">Principal</a>
+            <a href="archivo.html">Archivo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main> <!--Main contiene la parte principal de los documentos: parrafos, columnas, imagenes, carrousel etc-->
+        <h1>Contacto</h1><!--Titulo-->
+        <form id="contacto-form"> <!--Formulario-->
+            <label for="nombre">Nombre:</label><br>
+
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Email:</label><br>
+
+            <input type="email" id="email" name="email" required><br>
+
+
+            <label for="telefono">Teléfono:</label><br>
+
+            <input type="tel" id="telefono" name="telefono" pattern="\+54 266 \d{7,10}" placeholder="+54 266 1234567" required><br>
+
+
+            <label for="mensaje">Mensaje:</label><br>
+
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 TUDS-B-24 Programación Web I PN C1 - Trabajo Practico Integrador - Escudero/Poblete
+    </footer>
+</body>
+</html>
