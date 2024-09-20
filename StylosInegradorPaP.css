@@ -30,6 +30,7 @@ body{
     padding-top: 20px; /* Espacio superior desde donde inicio el contenido para no taparlo por el header */
     padding-bottom: 20px;/* Espacio inferior desde donde inicio el contenido para no taparlo por el footer*/
     margin: 0; /* Se agrega 0 para elimnar el margen que trae por defecto*/
+
 }
 
 body :visited{
@@ -40,5 +41,5 @@ main {
     background-color: black; /* Fondo negro para el main */
     color: white; /* Texto blanco para el main */
     padding: 20px; /* Espacio interno en el main para que el texto no esté pegado a los bordes */
-
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
 }
