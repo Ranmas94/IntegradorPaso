@@ -7,25 +7,42 @@
     <link rel="stylesheet" href="StylosInegradorPaP.css">
 </head>
 <body>
-    <header> <!--En el header voy a tener la cabecera de las paginas y estara fijada a top y left, abarcando el ancho de la pagina-->
-        <nav> <!--Nav sera para mis botones de navegacion entre las paginas del documento, fijado a la cabecera tambien-->
-            <a href="Principal.html">Principal</a>
-            <a href="Artículo.html">Artículo</a>
-            <a href="Formulario de contacto.html">Formulario de contacto</a>
-            <a href="rottentomatoes.html">Valoraciones</a>
-        </nav>
-    </header>
+    <nav> <!-- usamos este contenedor para el menu -->
+        <ul class="menu">
+            <li><a href="principal.html">Principal</a></li>
+            <li><a href="Artículo.html">Articulo</a></li>
+            <li><a href="Formulario de contacto.html">Formulario</a></li>
+            <li id="menudes"><a href="#"></a>Acerca de <!-- Dentro de la seccion Acerca de, se depliegan otras opciones -->
+            <ul>
+                <li><a href="#seccion1">¿Quiénes somos?</a></li>
+                <li><a href="#seccion2">Cine slasher</a></li>
+                <li><a href="#seccion3">Caracteristicas</a></li>
+            </ul>
+            </li>
+            <li><a href="rottentomatoes.html">Valoraciones</a></li>
+        </ul>
+
+    </nav>
     <main> <!--Main contiene la parte principal de los documentos: parrafos, columnas, imagenes, carrousel etc-->
-        <h1><!--Titulo-->
-            Bienvenido a mi pagina de peliculas slasher de los 80's y 90's
-        </h1>
+        <h1>Bienvenido a nuestra página de películas slasher de los 80's y 90's</h1>
+        <h2 id="seccion1"><!--Titulo-->
+            ¿Quiénes somos?
+        </h2>
+            <p>
+                Bienvenido a nuestra página dedicada a las películas del género slasher, donde el terror y la adrenalina se mezclan en una experiencia cinematográfica llena de sustos, suspenso y escenas impactantes. Aquí encontrarás reseñas detalladas, valoraciones y todo lo que necesitas saber sobre las mejores (y peores) producciones del slasher. Tanto si eres un fanático del cine de terror clásico como si prefieres los estrenos más recientes, en nuestro espacio encontrarás el lugar perfecto para descubrir nuevas películas o revivir tus favoritas.
+            </p>
+            <hr>
+        <h2 id="seccion2">
+            ¿Que es el cine slasher?
+        </h2>
         <p>El cine slasher, o simplemente el slasher, es un subgénero del cine de terror.
             El término mismo, slasher, es un anglicismo derivado de la palabra «slash» 
             («cuchillada» o «corte» en inglés). <br> La característica habitual de este subgénero es la 
             presencia de un psicópata que asesina brutalmente a adolescentes y jóvenes que se encuentran 
-            fuera de la supervisión de algún adulto.
+            fuera de la supervisión de algún adulto. El cine slasher ha sido un subgénero fundamental del terror desde que irrumpió en la gran pantalla en los años 70 y 80. Películas icónicas como Halloween, Viernes 13 y Pesadilla en Elm Street no solo han dejado huella en la cultura popular, sino que también han dado forma a las reglas y tropos del slasher. Estas producciones se caracterizan por la presencia de asesinos despiadados, una atmósfera de tensión constante y una mezcla perfecta entre lo psicológico y lo visceral. Desde los asesinos enmascarados hasta las víctimas que luchan por sobrevivir, el slasher nos ofrece una experiencia única que mantiene al espectador al borde de su asiento.
         </p>
-        <h2>
+        <hr>
+        <h2 id="seccion3">
             Caracteristicas:
         </h2>
         <p>

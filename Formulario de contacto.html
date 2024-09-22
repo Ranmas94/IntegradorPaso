@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="StylosInegradorPaP.css">
 </head>
 <body>
-    <header> <!--En el header voy a tener la cabecera de las paginas y estara fijada a top y left, abarcando el ancho de la pagina-->
-        <nav> <!--Nav sera para mis botones de navegacion entre las paginas del documento, fijado a la cabecera tambien-->
-            <a href="principal.html">Principal</a>
-            <a href="Artículo.html">Artículo</a>
-            <a href="Formulario de contacto.html">Formulario de contacto</a>
-            <a href="rottentomatoes.html">Valoraciones</a>
-        </nav>
-    </header>
+    <nav> <!-- usamos este contenedor para el menu -->
+        <ul class="menu">
+            <li><a href="principal.html">Principal</a></li>
+            <li><a href="Artículo.html">Articulo</a></li>
+            <li><a href="Formulario de contacto.html">Formulario</a></li>
+            <li id="menudes"><a href="#"></a>Acerca de <!-- Dentro de la seccion Acerca de, se depliegan otras opciones -->
+            <ul>
+                <li><a href="#seccion1">¿Quiénes somos?</a></li>
+                <li><a href="#seccion2">Cine slasher</a></li>
+                <li><a href="#seccion3">Caracteristicas</a></li>
+            </ul>
+            </li>
+            <li><a href="rottentomatoes.html">Valoraciones</a></li>
+        </ul>
+
+    </nav>
     <main> <!--Main contiene la parte principal de los documentos: parrafos, columnas, imagenes, carrousel etc-->
         <h1>Contacto</h1><!--Titulo-->
         <form id="contacto-form"> <!--Formulario-->
