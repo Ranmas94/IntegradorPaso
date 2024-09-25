@@ -109,7 +109,7 @@ main {
 }
 
 .columna img:hover {
-    transform: scale(1.3); /* Cuando paso el mouse aumenta el tamaño de la imagen al 110% */
+    transform: scale(1.3); /* Cuando paso el mouse aumenta el tamaño de la imagen al 130% */
     cursor: pointer; /* Cambia el cursor a una manito*/
 }
 
@@ -121,3 +121,9 @@ h2, h3 {
     margin: 10px 0; /* Espaciado superior e inferior */
 }
 
+.image-container { /*STYLO DE TEMPORAL MUESTRA CARROUSEL*/
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+}
