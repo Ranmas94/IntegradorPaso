@@ -19,11 +19,11 @@
         </header>
         <main> <!--Main contiene la parte principal de los documentos: parrafos, columnas, imagenes, carrousel etc-->
             <h1>Bienvenido a nuestra página de películas slasher de los 80's y 90's</h1>
-            <p>*este sera carrousel, lo pongo solo para visualizar como seria****</p>
-            <div class="image-container"></div>
-            <img src="ImagenesInt/pruebaURL1.jpg" alt="este sera el carrousel idea aprox" width="300" height="300">
-            <img src="ImagenesInt/fred.webp" alt="este sera el carrousel idea aprox" width="300" height="300">
-            <img src="ImagenesInt/viernes13.jpg" alt="este sera el carrousel idea aprox" width="300" height="300">
+            
+            <div class="carousel"> <!-- Contenedor del carrusel -->
+                <button id="izqBoton" onclick="changeImage(-1)">&#10094;</button> <!-- Botón anterior -->
+                <img id="carouselImage" src="" alt="Son las imagenes del carrusel" width="350" height="350"> <!-- Imagen actual mostrada -->
+                <button id="derBoton" onclick="changeImage(1)">&#10095;</button> <!-- Botón siguiente -->
             </div>
         </main>
         <div id="texto">
@@ -85,5 +85,7 @@
         <footer>
             &copy; 2024 TUDS-B-24 Programación Web I PN C1 - Trabajo Practico Integrador - Escudero/Poblete
         </footer>
+        <!-- Incluye el archivo JavaScript para el carrusel, al estar al final del body lo que asegura que el DOM esté completamente cargado antes de ejecutar el script, verdad?? -->
+        <script src="carrusel.js"></script>
     </body>
 </html>

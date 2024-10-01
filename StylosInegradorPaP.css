@@ -123,9 +123,44 @@ a{
   text-align: center;
 }
 
-.image-container { /*STYLO DE TEMPORAL MUESTRA CARROUSEL*/
+.image-container { /*STYLO (?*/
   display: flex; 
   justify-content: center; 
   align-items: center; 
   height: 100%; 
+}
+
+/**/
+
+.carousel {
+  display: flex; /* Bendito flexbox */
+  justify-content: center; /* Centra el contenido del carrusel horizontalmente */
+  align-items: center; /* Centra el contenido del carrusel verticalmente */
+  margin: 20px 0; /* Margen superior e inferior */
+}
+
+.carousel img {
+  margin: 0 20px; /* Margen a los lados de la imagen */
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo etc etc */
+  border: none; /* Nada por ahora, pero luego intentamos */
+  color: black; /* Color de texto */
+  padding: 10px; /* Espacio interno */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 1); /* Fondo blanco al pasar el mouse */
+}
+
+/* Estilo para los botones en el carrusel */
+#izqBoton {
+  margin-right: 10px; /* Espacio entre el botón anterior y la imagen */
+}
+
+#derBoton {
+  margin-left: 10px; /* Espacio entre el botón siguiente y la imagen */
 }
