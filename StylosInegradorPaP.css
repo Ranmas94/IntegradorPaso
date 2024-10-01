@@ -13,7 +13,7 @@ nav{
   .menu{
     display: flex; /* Esto convierte la lista ul en un contenedor flexbox, lo que permite que sus elementos hijos li se distribuyan en línea horizontalmente.*/
     list-style: none;
-    background-color: rgb(206, 0, 0);
+   background: linear-gradient(to right,rgb(233, 16, 16),rgb(104, 62, 218) );
     padding: 0px;
     margin: 0px; /* Elimina el padding y el margen del contenedor del menú para que no haya espacio adicional alrededor del menú.*/
     height: 50px;
@@ -28,16 +28,6 @@ nav{
   
   .menu li:hover ul{
   display: block; /*Hace visible el submenú (ul), ya que por defecto está oculto. Cuando el usuario hace hover, el submenú se muestra.*/
-  }
-  
-
-  .menu li ul{
-    display: none; /* Oculta el submenú inicialmente. El submenú solo se mostrará cuando el usuario pase el cursor sobre el elemento del menú principal (controlado por la regla li:hover).*/
-    list-style: none;
-    position: absolute; /*Esto hace que el submenú se posicione fuera del flujo normal del documento. Gracias a position: relative en el padre (li), el submenú se posicionará justo debajo del elemento padre.*/
-    padding: 0; /*Elimina los márgenes y el padding del submenú para que no haya espacio innecesario alrededor de los elementos del submenú.*/
-    margin: 0px;
-    background-color: rgb(206, 0, 0);
   }
   
   .menu a{
@@ -61,16 +51,18 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
+    font-size: medium;
     
 }
 
 body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size:x-large;
+    color: white;
     padding-top: 20px; /* Espacio superior desde donde inicio el contenido para no taparlo por el header */
     padding-bottom: 20px;/* Espacio inferior desde donde inicio el contenido para no taparlo por el footer*/
     margin: 0; /* Se agrega 0 para elimnar el margen que trae por defecto*/
-    background-image: url(fondoanimado.gif); /* Agrega la imagen de fondo */
+    background-image: url(ImagenesInt/1337139.png); /* Agrega la imagen de fondo */
     background-size: cover; /* Cubre toda el área */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -87,6 +79,7 @@ main {
     color: white; /* Texto blanco para el main */
     padding: 20px; /* Espacio interno en el main para que el texto no esté pegado a los bordes */
     min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    box-sizing: border-box;
 }
 
 .columna {
@@ -117,8 +110,17 @@ h1{
     font-size: 40px;
 }
 h2, h3 {
-    font-size: xx-large; /* Cambia este valor al tamaño deseado */
+    font-size:50px; /* Cambia este valor al tamaño deseado */
     margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+a{
+  color: red;
+}
+
+#texto{
+  overflow: hidden;
+  text-align: center;
 }
 
 .image-container { /*STYLO DE TEMPORAL MUESTRA CARROUSEL*/
