@@ -20,7 +20,7 @@ nav{
   .menu{
     display: flex; /* Esto convierte la lista ul en un contenedor flexbox, lo que permite que sus elementos hijos li se distribuyan en línea horizontalmente.*/
     list-style: none;
-   background: linear-gradient(to right,rgb(45, 170, 160),rgb(31, 94, 167) );
+   background: linear-gradient(to right,rgb(123, 5, 1),rgb(181, 1, 1) );
     padding: 0px;
     margin: 0px; /* Elimina el padding y el margen del contenedor del menú para que no haya espacio adicional alrededor del menú.*/
     height: 50px;
@@ -62,9 +62,9 @@ body{
     padding-top: 20px; /* Espacio superior desde donde inicio el contenido para no taparlo por el header */
     padding-bottom: 20px;/* Espacio inferior desde donde inicio el contenido para no taparlo por el footer*/
     margin: 0; /* Se agrega 0 para elimnar el margen que trae por defecto*/
-    background-image: url(ImagenesInt/fondo.png); /* Agrega la imagen de fondo */
-    background-size: cover; /* Cubre toda el área */
-    background-position: center; /* Centra la imagen */
+    background-image: url(ImagenesInt/FondoGif.gif); /* Agrega la imagen de fondo */
+    background-size: auto; /* Cubre toda el área */
+    background-attachment: fixed; /* Fija la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     box-sizing: border-box;
     
@@ -111,9 +111,11 @@ main {
 
 h1{
     font-size: 40px;
+    margin: 50px 0; /* Espaciado superior e inferior */
+
 }
 h2, h3 {
-    font-size:50px; /* Cambia este valor al tamaño deseado */
+    font-size:45px; /* Cambia este valor al tamaño deseado */
     margin: 50px 0; /* Espaciado superior e inferior */
 }
 
