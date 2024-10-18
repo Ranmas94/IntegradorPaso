@@ -18,23 +18,24 @@
             </nav>
         </header>
         <main> <!--Main contiene la parte principal de los documentos: parrafos, columnas, imagenes, carrousel etc-->
-            <h1>Slasher del 80's y 90's</h1>
+            <h1 id="headerTitle">Slasher del 60's 70's 80's y 90's</h1>
             <div class="carousel"> <!-- Contenedor del carrusel -->
                 <button id="izqBoton" onclick="changeImage(-1)">&#10094;</button> <!-- Botón anterior -->
-                <img id="carouselImage" src="" alt="Son las imagenes del carrusel" width="350" height="350"> <!-- Imagen actual mostrada -->
+                <img id="carouselImage" src="" alt="Son las imagenes del carrusel" width="400" height="400"> <!-- Imagen actual mostrada -->
                 <button id="derBoton" onclick="changeImage(1)">&#10095;</button> <!-- Botón siguiente -->
             </div>
        
         <div class="contenedor">
         <div>
-        <h2><!--Titulo-->
+        <h2 class="headerPrincipal"><!--Titulo-->
+            <hr>
             ¿Quiénes somos?
         </h2>
             <p>
                 Bienvenido a nuestra página dedicada a las películas del género slasher, donde el terror y la adrenalina se mezclan en una experiencia cinematográfica llena de sustos, suspenso y escenas impactantes. Aquí encontrarás reseñas detalladas, valoraciones y todo lo que necesitas saber sobre las mejores (y peores) producciones del slasher. Tanto si eres un fanático del cine de terror clásico como si prefieres los estrenos más recientes, en nuestro espacio encontrarás el lugar perfecto para descubrir nuevas películas o revivir tus favoritas.
             </p>
             <hr>
-        <h2 id="seccion2">
+        <h2 class="headerPrincipal">
             ¿Que es el cine slasher?
         </h2>
         <p>El cine slasher, o simplemente el slasher, es un subgénero del cine de terror.
@@ -44,7 +45,7 @@
             fuera de la supervisión de algún adulto. El cine slasher ha sido un subgénero fundamental del terror desde que irrumpió en la gran pantalla en los años 70 y 80. Películas icónicas como Halloween, Viernes 13 y Pesadilla en Elm Street no solo han dejado huella en la cultura popular, sino que también han dado forma a las reglas y tropos del slasher. Estas producciones se caracterizan por la presencia de asesinos despiadados, una atmósfera de tensión constante y una mezcla perfecta entre lo psicológico y lo visceral. Desde los asesinos enmascarados hasta las víctimas que luchan por sobrevivir, el slasher nos ofrece una experiencia única que mantiene al espectador al borde de su asiento.
         </p>
         <hr>
-        <h2 id="seccion3">
+        <h2 class="headerPrincipal">
             Caracteristicas
         </h2>
         <p>
@@ -88,6 +89,6 @@
             &copy; 2024 TUDS-B-24 Programación Web I PN C1 - Trabajo Practico Integrador - Escudero/Poblete
         </footer>
         <!-- Incluye el archivo JavaScript para el carrusel, al estar al final del body lo que asegura que el DOM esté completamente cargado antes de ejecutar el script, verdad?? -->
-        <script src="carrusel.js"></script>
+        <script src="functions.js"></script>
     </body>
 </html>
