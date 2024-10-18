@@ -226,14 +226,15 @@ button:hover {
 /*formulario*/
 .formContainer{
   backdrop-filter: blur(7px);
-  background: rgba(230, 155, 155, 0.212);
+  background: rgba(158, 181, 250, 0.212);
   border-radius: 60px 70px 40px 140px;
   width: 700px;
-  height: 500px;
+  height: 600px;
   padding: 0px 80px;
   box-sizing: border-box;
 
 }
+
 
 .formContainer:hover{
   border: 2px solid rgb(255, 255, 255);
@@ -258,11 +259,11 @@ input{
   border-radius: 20px;
   background-image: linear-gradient(to right, #c42929, #453cc4);
   height: 40px;
-  width: 100px;
+  width: 300px;
   color: white;
   font-size: large;
-  margin-top: 50px;
-  margin-left: 50%;
+  margin: 30px 120px 20px 120px;
+
 }
 
 .buttonF:hover{

@@ -49,7 +49,7 @@ function validateForm(){
     let nombre = document.getElementById('nombre');
     let email = document.getElementById('email');
     let tel = document.getElementById('telefono');
-    let mensaje = document.getElementById('mensaje');
+    let apellido = document.getElementById('apellido');
 
     let namePattern = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
 
@@ -64,6 +64,21 @@ function validateForm(){
         let spanError = document.createElement('span');
         spanError.appendChild(document.createTextNode("*Ingrese un nombre válido"));
         nombre.insertAdjacentElement("afterend",spanError);
+        spanError.style.display= 'block';
+        flagError = true;
+    }
+
+    if(apellido.value === "" || !namePattern.test(apellido.value)){
+        //verificamos si existe un span antes de crear una
+        let existingErrorSpan = apellido.nextElementSibling;
+        if(existingErrorSpan && existingErrorSpan.tagName ==='SPAN'){
+            existingErrorSpan.remove();
+        }
+
+        //creamos el span
+        let spanError = document.createElement('span');
+        spanError.appendChild(document.createTextNode("*Ingrese un apellido válido"));
+        apellido.insertAdjacentElement("afterend",spanError);
         spanError.style.display= 'block';
         flagError = true;
     }
@@ -95,7 +110,7 @@ function validateForm(){
         spanError.style.display= 'block';
         flagError = true;
     }
-
+console.log(flagError);
    
     return !flagError;
 }

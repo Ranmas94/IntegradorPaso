@@ -21,9 +21,14 @@
     <main> <!--Main contiene la parte principal de los documentos: parrafos, columnas, imagenes, carrousel etc-->
         <div class="formContainer">
         <h1>Contacto</h1><!--Titulo-->
-        <form id="contacto-form" action="" method="get" novalidate onsubmit="return validateForm()"> <!--Formulario-->
+        <form id="contacto-form" action="" method="get" autocomplete="off" novalidate onsubmit="return validateForm()"> <!--Formulario-->
+
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="First name" onfocus="clearInput(event)">
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Last name" onfocus="clearInput(event)">
             <br>
 
             <label for="email">Email:</label>
@@ -43,6 +48,6 @@
     <footer>
         &copy; 2024 TUDS-B-24 Programación Web I PN C1 - Trabajo Practico Integrador - Escudero/Poblete
     </footer>
-    <script src="carrusel.js"></script>
+    <script src="functions.js"></script>
 </body>
 </html>
