@@ -23,23 +23,47 @@ const images = [
     "ImagenesInt/the abominable dr phibes.jpg"
 ];
 
-let currentIndex = 0; // Índice de la imagen actual
+let cont = 0;
 
-// Funcion para que cambiemos la imagen
-function changeImage(direction) {
-    currentIndex += direction; // Aumenta o disminuye el indice de acuerdo a la direccion
-    if (currentIndex < 0) currentIndex = images.length - 1; // Regresa al final si es menor a 0
-    if (currentIndex >= images.length) currentIndex = 0; // Regresa al inicio si supera el numero de imagenes
-    document.getElementById("carouselImage").src = images[currentIndex]; // Cambia la fuente de la imagen
+
+function carrousel(contenedor){
+    contenedor.addEventListener('click', e => {
+        let atras = contenedor.querySelector('.atras');
+        let adelante = contenedor.querySelector('.adelante');
+        let imgs = contenedor.querySelectorAll('img');
+        let tgt = e.target;
+
+        if (tgt === atras) {
+            if (cont > 0) {
+                cont--;
+            } else if(cont == 0){
+                cont = images.length - 1;
+
+            }else if(cont == images.length - 1){
+                cont = images.length - 2;
+
+            }else {
+                cont = images.length - 3;
+            }
+        } else if (tgt === adelante) {
+            if (cont < images.length - 1) {
+                cont++;
+            } else {
+                cont = 0;
+            }
+        }
+
+        imgs[0].src = images[cont]; // Imagen actual
+        imgs[1].src = images[(cont + 1) % images.length]; // Siguiente imagen
+        imgs[2].src = images[(cont + 2) % images.length]; // Imagen después de la siguiente
+    });
+
 }
 
-// Inicializa la primera imagen al cargar
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("carouselImage").src = images[currentIndex]; // Establece la primera imagen
+document.addEventListener("DOMContentLoaded", () =>{
+    let contenedor = document.querySelector('.carousel');
+    carrousel(contenedor);
 });
-
-// Cambiar automáticamente la imagen cada 3 segundos, desactivado para ver si lo hacemos con botones
-//setInterval(() => changeImage(1), 3000); // Llama a changeImage cada 3 segundos
 
 //validacion de formulario
 

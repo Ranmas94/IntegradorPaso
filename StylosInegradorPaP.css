@@ -62,8 +62,8 @@ body{
     padding-top: 20px; /* Espacio superior desde donde inicio el contenido para no taparlo por el header */
     padding-bottom: 20px;/* Espacio inferior desde donde inicio el contenido para no taparlo por el footer*/
     margin: 0; /* Se agrega 0 para elimnar el margen que trae por defecto*/
-    background-color: black;
-    background-size: auto; /* Cubre toda el área */
+    background-image: url('ImagenesInt/FondoGif.gif');
+    background-size: 100%; /* Cubre toda el área */
     background-attachment: fixed; /* Fija la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     box-sizing: border-box;
@@ -117,6 +117,7 @@ main {
     height: 400px; /* Mantiene la proporción de la imagen */
     width: 300px;
     margin-top: 25px;
+    box-shadow: 0 0 10px rgba(153, 150, 150, 0.6);
    
 }
 
@@ -199,28 +200,42 @@ a{
 .carousel img {
   margin: 100px 20px 80px 20px; /* Margen a los lados de la imagen */
   height: 500px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
 }
 
-button {
-  background-color: rgba(255, 255, 255, 0.7); /* Fondo etc etc */
-  border: none; /* Nada por ahora, pero luego intentamos */
-  color: black; /* Color de texto */
-  padding: 10px; /* Espacio interno */
-  cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
-  font-size: 16px; /* Tamaño de fuente */
+.botones{
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .7);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+
 }
 
-button:hover {
-  background-color: rgba(255, 255, 255, 1); /* Fondo blanco al pasar el mouse */
+.botones:hover{
+  cursor: pointer;
+  transform: scale(1.2,1.2);
+  background-color: rgba(54, 0, 0, 0.7);
 }
 
-/* Estilo para los botones en el carrusel */
-#izqBoton {
-  margin-right: 10px; /* Espacio entre el botón anterior y la imagen */
+.atras{
+  left: 15%;
+  top: calc(50% - 40px);
 }
 
-#derBoton {
-  margin-left: 10px; /* Espacio entre el botón siguiente y la imagen */
+.adelante{
+  right: 15%;
+  top: calc(50% - 40px);
+}
+
+img:hover{
+  transform: scale(1.1);
 }
 
 /*formulario*/
@@ -232,6 +247,7 @@ button:hover {
   height: 600px;
   padding: 0px 80px;
   box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(226, 217, 217, 0.6);
 
 }
 
