@@ -78,12 +78,15 @@ main {
      /* Fondo negro para el main */
     color: white; /* Texto blanco para el main */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-   flex-direction: column;
-    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding-top: 60px; /* Espacio para el encabezado */
+} /* Asegura que ocupe toda la altura de la ventana */
    
-}
+
+
 
 .moviesContainer {
     display: flex; /* Utiliza Flexbox */
