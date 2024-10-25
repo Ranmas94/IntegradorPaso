@@ -74,6 +74,7 @@ function validateForm(){
     let email = document.getElementById('email');
     let tel = document.getElementById('telefono');
     let apellido = document.getElementById('apellido');
+    let contrasenia = document.getElementById('contrasenia');
 
     let namePattern = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
 
@@ -117,6 +118,20 @@ function validateForm(){
         let spanError = document.createElement('span');
         spanError.appendChild(document.createTextNode("*Ingrese un email válido"));
         email.insertAdjacentElement("afterend",spanError);
+        spanError.style.display= 'block';
+        flagError = true;
+    }
+
+
+    if(contrasenia.value === ""){
+        let existingErrorSpan = contrasenia.nextElementSibling;
+        if(existingErrorSpan && existingErrorSpan.tagName ==='SPAN'){
+            existingErrorSpan.remove();
+        }
+
+        let spanError = document.createElement('span');
+        spanError.appendChild(document.createTextNode("*Ingrese una contraseña válida"));
+        contrasenia.insertAdjacentElement("afterend",spanError);
         spanError.style.display= 'block';
         flagError = true;
     }
