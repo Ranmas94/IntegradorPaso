@@ -6,6 +6,12 @@ nav{
     font-size: large;
     z-index: 10000;
   }
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
   
   .menu li:hover{
     background: rgb(190, 16, 16);
@@ -145,13 +151,20 @@ h1{
     0 0 100px red;
 }
 
-.headerPrincipal{
-  font-size:45px; /* Cambia este valor al tamaño deseado */
-    margin: 50px 0; /* Espaciado superior e inferior */
-    text-shadow: 0 0 5px rgb(151, 29, 29),
+h1,h2,h3{
+  text-shadow: 0 0 5px rgb(151, 29, 29),
     0 0 25px red,
     0 0 50px red,
     0 0 100px red;
+}
+
+#formHeader{
+  margin-bottom: 150px;
+}
+
+.headerPrincipal{
+  font-size:45px; /* Cambia este valor al tamaño deseado */
+    margin: 50px 0; /* Espaciado superior e inferior */
 }
 h2,h3 {
     font-size:45px; /* Cambia este valor al tamaño deseado */
@@ -290,7 +303,7 @@ input{
   cursor: pointer;
  }
  span{
-  color: rgb(96, 161, 235);
+  color: rgb(235, 54, 54);
   display: none;
   margin-bottom: 10px;
   margin-top: -30px;
@@ -337,7 +350,8 @@ input{
   }
 
   .formContainer {
-    width: 90%; /* Se ajusta al ancho de la pantalla */
+    width: 80%; /* Se ajusta al ancho de la pantalla */
+    height: 90%;
     padding: 20px;
     border-radius: 20px; /* Reducción del borde para dispositivos móviles */
   }
@@ -368,9 +382,14 @@ input{
   }
 
   h1, h2, h3, .titleMovie, .headerPrincipal {
-    font-size: 24px; /* Reduce el tamaño de los títulos */
+    font-size: 20px; /* Reduce el tamaño de los títulos */
     margin: 20px 0; /* Ajusta el margen */
   }
+
+#formHeader{
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
 
 #headerTitle{
   font-size: 40px;
@@ -384,6 +403,10 @@ input{
 
   .contenedor{
     margin-top: 40px;
+  }
+
+  p{
+    font-size: 15px;
   }
 }
 
