@@ -13,7 +13,7 @@ nav{
   }
 
   .menu li{
-    height: 50px;
+    height: 100%;
     
    }
 
@@ -62,7 +62,7 @@ body{
     padding-top: 20px; /* Espacio superior desde donde inicio el contenido para no taparlo por el header */
     padding-bottom: 20px;/* Espacio inferior desde donde inicio el contenido para no taparlo por el footer*/
     margin: 0; /* Se agrega 0 para elimnar el margen que trae por defecto*/
-    background-image: url('ImagenesInt/FondoGif.gif');
+    background: black;
     background-size: 100%; /* Cubre toda el área */
     background-attachment: fixed; /* Fija la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -241,7 +241,7 @@ img:hover{
 /*formulario*/
 .formContainer{
   backdrop-filter: blur(7px);
-  background: rgba(158, 181, 250, 0.212);
+  background: rgba(250, 158, 158, 0.212);
   border-radius: 60px 70px 40px 140px;
   width: 700px;
   height: 600px;
@@ -293,3 +293,94 @@ input{
   margin-top: -30px;
   font-size: small;
 }
+
+/*diseño responsive*/
+@media (max-width: 768px) {
+  body{
+    margin-top: 200px;
+    margin-bottom: 80px;
+  }
+  nav {
+    font-size: medium; /* Tamaño de fuente más pequeño */
+  }
+
+  .menu {
+    flex-direction: column; /* Cambia a columna */
+    height: auto; /* Ajusta la altura del menú */
+  }
+
+  .menu li {
+    text-align: center; /* Centra los elementos del menú */
+    width: 100%; /* Toma todo el ancho disponible */
+  }
+
+  .menu a {
+    padding: 15px; /* Aumenta el espacio de los enlaces */
+  }
+
+  .moviesContainer {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    margin: 20px;
+  }
+
+  .moviesContainer div {
+    margin: 15px 0; /* Ajusta el margen entre elementos */
+    min-width: 100%; /* Toma todo el ancho disponible */
+  }
+
+  .moviesContainer div p img {
+    height: 50%; /* Ajusta la altura automáticamente */
+    width: 50%; /* Imagen ocupa el 100% del contenedor */
+  }
+
+  .formContainer {
+    width: 90%; /* Se ajusta al ancho de la pantalla */
+    padding: 20px;
+    border-radius: 20px; /* Reducción del borde para dispositivos móviles */
+  }
+
+  input {
+    font-size: small; /* Reduce el tamaño de las entradas */
+  }
+
+  .buttonF {
+    width: 100%; /* Botón ocupa todo el ancho */
+    margin: 20px 0; /* Ajuste de margen */
+  }
+
+  .carousel img {
+    height: 300px; /* Reduce el tamaño de las imágenes */
+  }
+
+  .botones {
+    width: 70px;
+    height: 60px;
+    font-size: 30px;
+    background: #000000;
+    padding-bottom: 10px;
+  }
+
+  .atras, .adelante {
+    top: calc(50% + 340px); /* Ajusta la posición de los botones */
+  }
+
+  h1, h2, h3, .titleMovie, .headerPrincipal {
+    font-size: 24px; /* Reduce el tamaño de los títulos */
+    margin: 20px 0; /* Ajusta el margen */
+  }
+
+#headerTitle{
+  font-size: 40px;
+  margin-bottom: -80px;
+}
+
+  .contenedor div {
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    padding: 20px; /* Reduce el relleno */
+  }
+
+  .contenedor{
+    margin-top: 40px;
+  }
+}
+
