@@ -320,6 +320,23 @@ label{
   font-size: 30px;
 }
 
+/*feedback*/
+#FeedBack{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: linear-gradient(to right,#ad1919,#e66e36 );
+  width: 30%;
+  height: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  font-size: x-large;
+  
+}
+#FeedBackTitle{
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
 /*diseño responsive*/
 @media (max-width: 768px) {
   body{

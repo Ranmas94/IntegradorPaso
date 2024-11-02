@@ -125,7 +125,7 @@ function validateForm(){
     }
 
 
-    if(contrasenia.value === ""){
+    if(contrasenia.value === "" || contrasenia.value.length < 8){ 
         let existingErrorSpan = contrasenia.nextElementSibling;
         if(existingErrorSpan && existingErrorSpan.tagName ==='SPAN'){
             existingErrorSpan.remove();
@@ -151,9 +151,16 @@ function validateForm(){
         spanError.style.display= 'block';
         flagError = true;
     }
-console.log(flagError);
+ 
+    if(!flagError){
+        let res = document.getElementById('FeedBackTitle');
+        let text = document.createElement('h6');
+        text.innerHTML = "Nombre: " + nombre.value + "<br>" + "Apellido: " + apellido.value + "<br>" + "Email: " + email.value + "<br>" + "Teléfono: " + tel.value + "<br>" ;
+         res.appendChild(text);
+    }
+
    
-    return !flagError;
+    return false;
 }
 
 function clearInput(e){
