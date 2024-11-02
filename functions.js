@@ -78,7 +78,8 @@ function validateForm(){
 
     let namePattern = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
 
-    if(nombre.value === "" || !namePattern.test(nombre.value)){
+    if(nombre.value === "" || !namePattern.test(nombre.value) || nombre.value.length > 37){
+        //El nombre más largo del mundo es el de Brhadaranyakopanishadvivekachudamani Erreh Muñoz Castillo, un médico veterinario registrado en Coahuila, México y está compuesto por 36 letras.
         //verificamos si existe un span antes de crear una
         let existingErrorSpan = nombre.nextElementSibling;
         if(existingErrorSpan && existingErrorSpan.tagName ==='SPAN'){
@@ -87,13 +88,14 @@ function validateForm(){
 
         //creamos el span
         let spanError = document.createElement('span');
-        spanError.appendChild(document.createTextNode("*Ingrese un nombre válido"));
+        spanError.appendChild(document.createTextNode("*Ingrese un nombre válido (máx. 36 caracteres)"));
         nombre.insertAdjacentElement("afterend",spanError);
         spanError.style.display= 'block';
         flagError = true;
     }
 
-    if(apellido.value === "" || !namePattern.test(apellido.value)){
+    if(apellido.value === "" || !namePattern.test(apellido.value) || apellido.value.length > 37){
+        //El apellido más largo del mundo es el de Janice "Lokelani" Keihanaikukauakahihuliheekahaunaele, una mujer de Hawái, y está compuesto por 36 letras.
         //verificamos si existe un span antes de crear una
         let existingErrorSpan = apellido.nextElementSibling;
         if(existingErrorSpan && existingErrorSpan.tagName ==='SPAN'){
@@ -102,7 +104,7 @@ function validateForm(){
 
         //creamos el span
         let spanError = document.createElement('span');
-        spanError.appendChild(document.createTextNode("*Ingrese un apellido válido"));
+        spanError.appendChild(document.createTextNode("*Ingrese un apellido válido (máx. 36 caracteres)"));
         apellido.insertAdjacentElement("afterend",spanError);
         spanError.style.display= 'block';
         flagError = true;
