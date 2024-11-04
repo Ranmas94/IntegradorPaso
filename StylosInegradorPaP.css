@@ -321,16 +321,16 @@ label{
 }
 
 /*feedback*/
-#FeedBack{
+#FeedBack {
+  display: none; /* Oculta el cuadro del feedback por defecto o si no se envian datos correctos*/
   margin-top: 100px;
   margin-bottom: 100px;
-  background: linear-gradient(to right,#ad1919,#e66e36 );
+  background: linear-gradient(to right,#ad1919,#e66e36);
   width: 30%;
-  height: 300px;
+  height: auto; /* Ajustar altura según contenido */
   padding: 30px;
   border-radius: 15px;
   font-size: x-large;
-  
 }
 #FeedBackTitle{
   margin-top: 0;

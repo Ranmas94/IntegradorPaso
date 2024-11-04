@@ -138,7 +138,7 @@ function validateForm(){
         flagError = true;
     }
 
-    let telPattern = /^\+\d{1,3}\s\d{3}\s\d{7}$/;
+    let telPattern = /^\d{2}\s\d{3}\s\d{7}$/;
     if(tel.value === "" || !telPattern.test(tel.value)){
         let existingErrorSpan = tel.nextElementSibling;
         if(existingErrorSpan && existingErrorSpan.tagName ==='SPAN'){
@@ -152,11 +152,20 @@ function validateForm(){
         flagError = true;
     }
  
-    if(!flagError){
-        let res = document.getElementById('FeedBackTitle');
-        let text = document.createElement('h6');
-        text.innerHTML = "Nombre: " + nombre.value + "<br>" + "Apellido: " + apellido.value + "<br>" + "Email: " + email.value + "<br>" + "Teléfono: " + tel.value + "<br>" ;
-         res.appendChild(text);
+    if(!flagError){ // Mostrar el cuadro de feedback
+        
+    let feedbackDiv = document.getElementById('FeedBack');
+    feedbackDiv.style.display = 'block'; // Ahora muestra el cuadro de feedback
+
+    let res = document.getElementById('FeedBackTitle');
+    let text = document.createElement('h6');
+    text.innerHTML = "Nombre: " + nombre.value + "<br>" +
+                     "Apellido: " + apellido.value + "<br>" +
+                     "Email: " + email.value + "<br>" +
+                     "Teléfono: " + tel.value + "<br>";
+
+    res.innerHTML = "Usted ingreso los siguientes datos: "; //Titulo fb aparte de los datos que toma
+    res.appendChild(text);
     }
 
    
