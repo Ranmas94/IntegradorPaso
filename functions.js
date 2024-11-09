@@ -166,6 +166,14 @@ function validateForm(){
 
     res.innerHTML = "Usted ingreso los siguientes datos: "; //Titulo fb aparte de los datos que toma
     res.appendChild(text);
+
+ // Limpiar inputs DESPUES de envier form
+ nombre.value = "";
+ apellido.value = "";
+ email.value = "";
+ contrasenia.value = "";
+ tel.value = "";
+
     }
 
    
